@@ -1,4 +1,5 @@
 const string = `
+/* 我来画一个卡通版的漩涡鸣人把！*/
 * {
   margin: 0;
   padding: 0;
@@ -22,12 +23,15 @@ body {
   transform: translateX(-50%);
   overflow: hidden;
 }
+/* 首先鸣人有一卷标准的黄头发！ */
 
 .hair {
   height: 90px;
   background-color: #dcd768;
   border-bottom: 3px solid #cec968;
 }
+
+/* 忍者们都一个属于自己的护额！ */
 
 .hiddenleaf {
   height: 60px;
@@ -57,6 +61,7 @@ body {
   transform: skew(-45deg);
 }
 
+/* 脸部开始了！ */
 .face {
   height: 200px;
   background-color: #f2c9be;
@@ -65,6 +70,8 @@ body {
   z-index: -1;
 }
 
+
+/* 画俩个大大的眼睛 */
 .eye {
   position: absolute;
   width: 45px;
@@ -83,6 +90,7 @@ body {
   right: 23%;
 }
 
+/* 画鸣人的嘴巴  */
 .mouth {
   position: absolute;
   width: 80px;
@@ -94,14 +102,17 @@ body {
   border-radius: 0 0 50% 50%;
 }
 
+
 .mouth::before {
   content: '';
   display: block;
   width: 80px;
   height: 27px;
+  border:1px solid #f2c9be;
   background-color: #f2c9be;
 }
 
+/*  鸣人最最有特征的胡须要来咯！ */
 
 .whiskers .whisker {
   position: absolute;
@@ -144,5 +155,8 @@ body {
   right: 0;
   transform: rotate(205deg);
 }
+ /* 绘画完毕！ 
+ 卡通版鸣人送给你，
+ 希望你喜欢  */
 `
 export  default  string
